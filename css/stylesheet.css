@@ -2,7 +2,7 @@
 	font-family: 'Finger Paint', cursive;
 }
 
-h1 {
+h1, h2, h3, h4, h5, h6 {
 	font-family: 'Margarine', cursive;
 }
 
@@ -18,14 +18,22 @@ header #bar {
 	height: 6px;
 }
 
+header #logo {
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
 header nav a {
-	color: white;
 	display: block;
-	height: 50px;
-	font-size: 1.4em;
-	padding: 0 8px;
 	float: left;
-	line-height: 50px;
+	
+	height: 60px;
+	line-height: 60px;
+	
+	padding: 0 8px;
+	
+	font-size: 1.4em;
+	color: white;
 	font-family: 'Happy Monkey', cursive;
 }
 
@@ -33,4 +41,14 @@ header nav a:hover, header nav a:focus {
 	background-color: #333;
 	color: rgb(45, 180, 42);
 	text-decoration: none;
+}
+
+#project {
+	line-height: 20px;
+}
+
+#project section {
+	display: inline-block;
+	position: relative;
+	bottom: -5px;
 }
