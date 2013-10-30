@@ -1,5 +1,6 @@
 * {
-	font-family: 'Finger Paint', cursive;
+	font-family: 'Happy Monkey', sans-serif;
+	font-size: 1.1em;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -34,7 +35,7 @@ header nav a {
 	
 	font-size: 1.4em;
 	color: white;
-	font-family: 'Happy Monkey', cursive;
+	font-family: 'Happy Monkey', sans-serif;
 }
 
 header nav a:hover, header nav a:focus {
