@@ -1,96 +1,37 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<head>
+		<title>Vilify Game</title>
 
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1" charset="UTF-8" />
 
-    <!-- Load stylesheets -->
-    <link href='http://fonts.googleapis.com/css?family=Finger+Paint' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Happy+Monkey' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Margarine' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="css/stylesheet.css" media="screen" />
+		<!-- Icon -->
+		<link rel="shortcut icon" href="favicon.ico">
 
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
-    <!-- Icon -->
-    <link rel="shortcut icon" href="favicon.ico">
-
-    <title>Vilify</title>
-</head>
-
-<body>
-    <header>
-		<div class="container">
- 	    	<div class="pull-left">
-	 	    	<a href="#">
-	 	    		<img id="logo" src="images/logo.png" alt="Vilify"/>
-	 	    	</a>
-	 	    	<span class="text-error">Beta!</span>
-	 	    </div>
-        	<nav class="pull-right">
-                <a href="http://HTML5-Games.github.com/vilify/game.html" class="button">
-                    Play Vilify
-                </a>
-        	</nav>
-        </div>
-        <div id="bar"></div>
-    </header>
-
-	<div class="container">
-
-        <h1>You are a mad scientist,</h1>
-        <p>who dreams of destroying the world. After many years of work, your doomsday device is almost ready -- and the end is set for tomorrow. Unfortunately, your stupid cronie, who you fired yesterday (he spilled your explosion potion, setting your plans back by at least a week), let it slip that the end is coming. Now Super Heroes from around the world are heading to your base with one goal -- to stop you for good. (Why can't they mind their own business? You're only trying to destroy the world!) Now it's your turn. It's time to send those heroes back where they came from!</p>
-
-		<hr/>
-
-		<h2>Want to help make Vilify?</h2>
-
-		<div id="project">
-			<a href="https://github.com/HTML5-Games/vilify">Visit Vilify on GitHub</a>
-
-			<span class="muted">|</span>
-
-			<a href="https://github.com/HTML5-Games/vilify/wiki/Collaborators">Join the project</a>
-
-			<span class="muted">|</span>
-
-			<section>
-				<iframe src="http://ghbtns.com/github-btn.html?user=HTML5-Games&repo=vilify&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="80" height="20"></iframe>
-			</section>
-
-			<span class="muted">|</span>
-
-			<section>
-				<iframe src="http://ghbtns.com/github-btn.html?user=HTML5-Games&repo=vilify&type=fork&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe>
-			</section>
+		<!-- Load stylesheets -->
+		<link href='http://fonts.googleapis.com/css?family=Finger+Paint' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Happy+Monkey' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Margarine' rel='stylesheet' type='text/css'>
+		<link href="css/style.css" rel="stylesheet" />
+		<script src="http://code.createjs.com/createjs-2013.09.25.min.js"></script>
+		<script src="js/createjs-2013.09.25.min.js"></script>
+	</head>
+	<body>
+		<div id="container">
+			<canvas id="canvas" width="960px" height="640px">
+				Your browser doesn't support HTML5! <!--will display this text if canvas isn't supported-->
+			</canvas>
 		</div>
 
-        <hr/>
-
-        <p class="muted">
-        Vilify is developed by the <a href="http://www.codecademy.com/groups/html5-game-development/invite/9aec4bb0429f38c47944ab6d42fc30d3">HTML5 Game Development Group</a> on Codecademy.
-
-	</div>
-
-	<script src="http://code.jquery.com/jquery.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-
-	<script type="text/javascript">
-	    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-    	document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-    </script>
-    <script type="text/javascript">
-    	try {
-      		var pageTracker = _gat._getTracker("UA-39351905-1");
-    		pageTracker._trackPageview();
-    	} catch(err) {}
-    </script>
-
-</body>
+		<!-- Load scripts -->
+		<script src="game_data/objects.js"></script>
+		<script src="js/utilities.js"></script>
+		<script src="js/towers.js"></script>
+		<script src="js/monsters.js"></script>
+		<script src="js/cannon.js"></script>
+		<script src="js/items.js"></script>
+		<script src="js/heroes.js"></script>
+		<script src="js/background.js"></script>
+		<script src="js/main.js"></script>
+	</body>
 </html>
