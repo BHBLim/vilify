@@ -1,78 +1,37 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Vilify Game</title>
+	<head>
+		<title>Vilify Game</title>
 
-	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1" />
-	
-	<!-- Icon -->
-	<link rel="shortcut icon" href="favicon.ico">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1" charset="UTF-8" />
 
-	<!-- Load stylesheets -->
-        <link href='http://fonts.googleapis.com/css?family=Snowburst+One' rel='stylesheet' type='text/css'>
-        <link href="css/style.css" rel="stylesheet" />
-    </head>
-    <body>
-	<div id="container">
-		<div id="sidebar">
-			<!-- Sidebar Header -->
-			<div id="header" class="header">
-				<img id="logo" src="images/logo.png" alt="Vilify" />
-			</div>
+		<!-- Icon -->
+		<link rel="shortcut icon" href="favicon.ico">
 
-			<!-- Lab Wiget -->
-			<div id="lab">
-				<div class="lab-box"></div>
-				<div class="lab-box"></div>
-				<div class="lab-box"></div>
-			</div>
-
-			<!-- Place Tower Wiget -->
-			<div id="place-tower">
-			<div class="preview-box"></div>
-			<b class="preview-name"></b>
-			<hr>
-			Rank: <span class="rank"></span>
-			<hr>
-				Insert a short description here...
-				<hr>
-				Click on any empty wall tile to place this tower...
-				<hr>
-				<button class="button" onclick="Game.Sidebar.changeState( 'Lab' ); Game.Sidebar.needTile = false;">Discard</button>
-			</div>
-
-			<!-- Inventory Wiget -->
-			<div id="inventory">
-				<div class="inventory-row">
-					<div class="inventory-box"></div>
-					<div class="inventory-box"></div>
-					<div class="inventory-box"></div>
-				</div>
-				<div class="inventory-row">
-					<div class="inventory-box"></div>
-					<div class="inventory-box"></div>
-					<div class="inventory-box"></div>
-				</div>
-				<div class="inventory-row">
-					<div class="inventory-box"></div>
-					<div class="inventory-box"></div>
-					<div class="inventory-box"></div>
-				</div>
-			</div>
+		<!-- Load stylesheets -->
+		<link href='http://fonts.googleapis.com/css?family=Finger+Paint' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Happy+Monkey' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Margarine' rel='stylesheet' type='text/css'>
+		<link href="css/style.css" rel="stylesheet" />
+		<script src="http://code.createjs.com/createjs-2013.09.25.min.js"></script>
+		<script src="js/createjs-2013.09.25.min.js"></script>
+	</head>
+	<body>
+		<div id="container">
+			<canvas id="canvas" width="960px" height="640px">
+				Your browser doesn't support HTML5! <!--will display this text if canvas isn't supported-->
+			</canvas>
 		</div>
-		<canvas id="canvas" width="640px" height="640px">
-			Your browser doesn't support HTML5! <!--will display this text if canvas isn't supported-->
-		</canvas>
-	</div>
 
-	<!-- Load jQuery -->
-	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
-
-	<!-- Load scripts -->
-	<script src="js/utilities.js"></script>
-        <script src="js/engine.js"></script>
-        <script src="js/sidebar.js"></script>
-        <script src="js/core.js"></script>
-        <script src="js/main.js"></script>
-    </body>
+		<!-- Load scripts -->
+		<script src="game_data/objects.js"></script>
+		<script src="js/utilities.js"></script>
+		<script src="js/towers.js"></script>
+		<script src="js/monsters.js"></script>
+		<script src="js/cannon.js"></script>
+		<script src="js/items.js"></script>
+		<script src="js/heroes.js"></script>
+		<script src="js/background.js"></script>
+		<script src="js/main.js"></script>
+	</body>
 </html>
